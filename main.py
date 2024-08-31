@@ -1,7 +1,6 @@
 from canvasapi import Canvas
 import json
 import eel
-import random
 eel.init("web")
 
 
