@@ -28,6 +28,7 @@ Alternatively, you can choose to individually install them via `pip` calls:
 - Eel - `pip install eel`
 - Canvas API - `pip install canvasapi`
 
+
 ### Setting up the key file
 In order for the tool to interact with the Canvas API, it needs an API key/access token. You're able to generate one for your Canvas user account by following the instructions in this article - [How do I manage API access tokens as an admin?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89)
 
@@ -45,6 +46,7 @@ Here, 56 is the subaccount ID. You're able to find this by accessing the subacco
 
 > [!NOTE]
 > Please note, if you don't set the subaccount in the keys file, it will be set to 1 by default, denoting the root account. 
+
 
 ### Setting up the URL of your Canvas instance
 1. Open `main.py`
