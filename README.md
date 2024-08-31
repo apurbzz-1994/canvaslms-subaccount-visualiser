@@ -55,7 +55,7 @@ yourcanvasinstance.com/accounts/185
 ```
 
 > [!NOTE]
-> Please note, if you don't set the subaccount in the keys file, it will be set to 1 by default, which is the root account. 
+> Please note, if you don't set the subaccount in the key file, it will be set to 1 by default, which is the root account. 
 
 
 ### Setting up the URL of your Canvas instance
