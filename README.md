@@ -53,9 +53,11 @@ Here, 56 is the subaccount ID. You're able to find this by accessing the subacco
 
 2. Look for the ROOT_URL_MAP dictionary. Here, add the same key that you used in the key file (e.g, prod_prod), and set the value to the URL of your Canvas instance:
 
-`ROOT_URL_MAP = {
+```
+ROOT_URL_MAP = {
     'prod_prod': 'mycanvasurl.com'
-}`
+}
+```
 
 3. Locate the CURRENT_ENV variable and set it's value to the key denoting your Canvas instance
 
@@ -74,6 +76,6 @@ Python dependencies:
 - [Eel](https://github.com/python-eel/Eel) 
 - [Canvas API Python Wrapper](https://canvasapi.readthedocs.io/en/stable/getting-started.html)
 
-Frontend Dependencies:
+Frontend dependencies:
 - Bootsrap 4.6.2 is being used via the CDN (you're able to find the corresponding stylesheet and script tages in  `index.html`). 
 - D3.JS is being used via the CDN [https://cdn.jsdelivr.net/npm/d3@7](https://cdn.jsdelivr.net/npm/d3@7)
