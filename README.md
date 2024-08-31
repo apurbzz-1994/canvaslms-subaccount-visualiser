@@ -59,7 +59,11 @@ ROOT_URL_MAP = {
 }
 ```
 
-3. Locate the CURRENT_ENV variable and set it's value to the key denoting your Canvas instance
+3. Locate the CURRENT_ENV variable and set it's value to the key denoting your Canvas instance:
+
+```
+CURRENT_ENV = prod_prod
+```
 
 ### Running the application
 To run the application, open a terminal, `cd` to the correct directory and run the following command:
