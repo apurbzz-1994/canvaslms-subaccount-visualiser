@@ -30,13 +30,15 @@ Alternatively, you can choose to individually install them via `pip` calls:
 
 
 ### Setting up the key file
-In order for the tool to interact with the Canvas API, it needs an API key/access token. You're able to generate one for your Canvas user account by following the instructions in this article - [How do I manage API access tokens as an admin?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89)
+In order for the tool to interact with the Canvas API, it needs an access-token. You're able to generate one for your Canvas user account by following the instructions in this article - [How do I manage API access tokens as an admin?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89)
 
-Once generated, create a text file named `key` in the same directory as the project files. Afterwards, add a line to the file with a key to denote your Canvas instance (for example, prod_prod, prod_beta etc), and set the value of the key to your access token. For example:
+Once generated, create a text file named `key` in the same directory as the project files. Afterwards, add a line to the file like the one below:
 
 `prod_prod: yoUrAcCesstokeNgoEsHere`
 
-You can also add a line afterwards to denote which subaccount you have admin access to that you'd need to visualise. This would look something like this:
+Here, "prod_prod" is a key that represents your Canvas instance (you can name this key whatever you want, but needs to be consistent everywhere). Then, after the colon is where you paste your access-token.   
+
+You can also add a next line afterwards to denote which subaccount you have admin access to that you'd need to visualise. This would look something like this:
 
 `prod_prod_root`: 56
 
@@ -45,13 +47,13 @@ Here, 56 is the subaccount ID. You're able to find this by accessing the subacco
 `yourcanvasinstance.com/accounts/185`
 
 > [!NOTE]
-> Please note, if you don't set the subaccount in the keys file, it will be set to 1 by default, denoting the root account. 
+> Please note, if you don't set the subaccount in the keys file, it will be set to 1 by default, which is the root account. 
 
 
 ### Setting up the URL of your Canvas instance
-1. Open `main.py`
+1. Open `main.py`.
 
-2. Look for the ROOT_URL_MAP dictionary. Here, add the same key that you used in the key file (e.g, prod_prod), and set the value to the URL of your Canvas instance:
+2. Look for the `ROOT_URL_MAP` dictionary. Here, add the same key that you used in the key file (e.g, prod_prod), and set its value to the URL of your Canvas instance:
 
 ```
 ROOT_URL_MAP = {
@@ -59,7 +61,7 @@ ROOT_URL_MAP = {
 }
 ```
 
-3. Locate the CURRENT_ENV variable and set it's value to the key denoting your Canvas instance:
+3. Locate the `CURRENT_ENV` variable and set it's value to the key denoting your Canvas instance:
 
 ```
 CURRENT_ENV = prod_prod
@@ -70,7 +72,7 @@ To run the application, open a terminal, `cd` to the correct directory and run t
 
 `python3 main.py`
 
-Depending on your system, you may need to use `python` or `python3` in the above command
+Depending on your system, you may need to use `python` or `python3` in the above command. 
 
 This will launch the dashboard. 
 
