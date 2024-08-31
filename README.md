@@ -25,8 +25,8 @@ This will install all necessary modules.
 
 Alternatively, you can choose to individually install them via `pip` calls:
 
-Eel - `pip install eel`
-Canvas API - `pip install canvasapi`
+- Eel - `pip install eel`
+- Canvas API - `pip install canvasapi`
 
 ### Setting up the key file
 In order for the tool to interact with the Canvas API, it needs an API key/access token. You're able to generate one for your Canvas user account by following the instructions in this article - [How do I manage API access tokens as an admin?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89)
