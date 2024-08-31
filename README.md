@@ -19,7 +19,8 @@ The tool is written in Python using the [Eel library](https://github.com/python-
 
 3. Open your terminal and `cd` to the repository directory and run the following command:
 
-    ```pip install -r requirements.txt```
+    ```pip install -r requirements.txt
+    ```
 
 This will install all necessary modules. 
 
@@ -34,17 +35,20 @@ In order for the tool to interact with the Canvas API, it needs an access-token.
 
 Once generated, create a text file named `key` in the same directory as the project files. Afterwards, add a line to the file like the one below:
 
-```prod_prod: yoUrAcCesstokeNgoEsHere```
+```prod_prod: yoUrAcCesstokeNgoEsHere
+```
 
 Here, "prod_prod" is a key that represents your Canvas instance (you can name this key whatever you want, but needs to be consistent everywhere). Then, after the colon is where you paste your access-token.   
 
 You can also add a next line afterwards to denote which subaccount you have admin access to that you'd need to visualise. This would look something like this:
 
-```prod_prod_root: 56```
+```prod_prod_root: 56
+```
 
 Here, 56 is the subaccount ID. You're able to find this by accessing the subaccount via Canvas and inspecting the URL. It should be the number at the end:
 
-```yourcanvasinstance.com/accounts/185```
+```yourcanvasinstance.com/accounts/185
+```
 
 > [!NOTE]
 > Please note, if you don't set the subaccount in the keys file, it will be set to 1 by default, which is the root account. 
@@ -70,7 +74,8 @@ CURRENT_ENV = prod_prod
 ### Running the application
 To run the application, open a terminal, `cd` to the correct directory and run the following command:
 
-```python3 main.py```
+```python3 main.py
+```
 
 Depending on your system, you may need to use `python` or `python3` in the above command. 
 
