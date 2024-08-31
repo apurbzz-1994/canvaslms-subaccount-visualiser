@@ -51,7 +51,7 @@ prod_prod_root: 56
 Here, 56 is the subaccount ID. You're able to find this by accessing the subaccount via Canvas and inspecting the URL. It should be the number at the end:
 
 ```
-yourcanvasinstance.com/accounts/185
+yourcanvasinstance.com/accounts/56
 ```
 
 > [!NOTE]
