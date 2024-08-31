@@ -7,8 +7,8 @@ eel.init("web")
 
 CURRENT_ENV = 'prod_prod'
 ROOT_URL_MAP = {
-    'prod_beta': 'https://unimelb-prod.beta.instructure.com',
-    'prod_prod': 'https://canvas.lms.unimelb.edu.au'
+    'prod_beta': '',
+    'prod_prod': ''
 }
 
 ROOT_ACCOUNT = 1
