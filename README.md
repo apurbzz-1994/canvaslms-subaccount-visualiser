@@ -19,7 +19,7 @@ The tool is written in Python using the [Eel library](https://github.com/python-
 
 3. Open your terminal and `cd` to the repository directory and run the following command:
 
-`pip install -r requirements.txt`
+    `pip install -r requirements.txt`
 
 This will install all necessary modules. 
 
