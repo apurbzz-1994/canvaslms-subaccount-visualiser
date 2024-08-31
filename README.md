@@ -68,19 +68,6 @@ Depending on your system, you may need to use `python` or `python3` in the above
 
 This will launch the dashboard. 
 
-## File structure
-
-|canvas-subaccount-visualiser
-|------------git_assets:
-|------------------sgrab_1.png
-|------------web:
-|------------------index.html
-|------------------script.js
-|------------LICENSE
-|------------main.py
-|------------README.md
-|------------requirements.txt
-
 ## Dependencies
 
 Python dependencies:
