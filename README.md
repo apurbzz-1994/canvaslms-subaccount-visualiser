@@ -23,9 +23,9 @@ The tool is written in Python using the [Eel library](https://github.com/python-
     pip install -r requirements.txt
     ```
 
-This will install all necessary modules. 
+    This will install all necessary modules. 
 
-Alternatively, you can choose to individually install them via `pip` calls:
+    Alternatively, you can choose to individually install them via `pip` calls:
 
 - Eel - `pip install eel`
 - Canvas API - `pip install canvasapi`
