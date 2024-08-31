@@ -66,6 +66,27 @@ To run the application, open a terminal, `cd` to the correct directory and run t
 
 Depending on your system, you may need to use `python` or `python3` in the above command
 
-This will launch the dashboard
+This will launch the dashboard. 
 
+## File structure
 
+|canvas-subaccount-visualiser
+|------------git_assets:
+|------------------sgrab_1.png
+|------------web:
+|------------------index.html
+|------------------script.js
+|------------LICENSE
+|------------main.py
+|------------README.md
+|------------requirements.txt
+
+## Dependencies
+
+Python dependencies:
+- [Eel](https://github.com/python-eel/Eel) 
+- [Canvas API Python Wrapper](https://canvasapi.readthedocs.io/en/stable/getting-started.html)
+
+Frontend Dependencies:
+- Bootsrap 4.6.2 is being used via the CDN (you're able to find the corresponding stylesheet and script tages in  `index.html`). 
+- D3.JS is being used via the CDN [https://cdn.jsdelivr.net/npm/d3@7](https://cdn.jsdelivr.net/npm/d3@7)
