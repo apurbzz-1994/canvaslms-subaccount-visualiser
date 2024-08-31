@@ -13,7 +13,7 @@ The tool is written in Python using the [Eel library](https://github.com/python-
 ## How to run
 
 ### Initial setup 
-1. Install the latest version of Python from [https://www.python.org/downloads/](https://www.python.org/downloads/), ensuring that you've added Python to your `PATH` (more on this here: [https://realpython.com/add-python-to-path/](https://realpython.com/add-python-to-path/)). 
+1. Install the latest version of Python from [https://www.python.org/downloads](https://www.python.org/downloads/), ensuring that you've added Python to your `PATH` (more on this here: [https://realpython.com/add-python-to-path](https://realpython.com/add-python-to-path/)). 
 
 2. Clone this repository in your machine. It is recommended to use a Python virtual environment (like [venv](https://docs.python.org/3/library/venv.html)) so that all modules and dependencies can be housed neatly in one place.
 
@@ -43,8 +43,8 @@ Here, 56 is the subaccount ID. You're able to find this by accessing the subacco
 
 `yourcanvasinstance.com/accounts/185`
 
-[!NOTE]
-Please note, if you don't set the subaccount in the keys file, it will be set to 1 by default, denoting the root account. 
+> [!NOTE]
+> Please note, if you don't set the subaccount in the keys file, it will be set to 1 by default, denoting the root account. 
 
 ### Setting up the URL of your Canvas instance
 1. Open `main.py`
