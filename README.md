@@ -42,7 +42,7 @@ prod_prod: yoUrAcCesstokeNgoEsHere
 
 Here, "prod_prod" is a key that represents your Canvas instance (you can name this key whatever you want, but needs to be consistent everywhere). Then, after the colon is where you paste your access-token.   
 
-You can also add a next line afterwards to denote which subaccount you have admin access to that you'd need to visualise. This would look something like this:
+You can also add a next line afterwards to denote which subaccount you have admin access to that you'd like to visualise. This would look something like this:
 
 ```
 prod_prod_root: 56
