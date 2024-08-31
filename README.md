@@ -40,7 +40,7 @@ Here, "prod_prod" is a key that represents your Canvas instance (you can name th
 
 You can also add a next line afterwards to denote which subaccount you have admin access to that you'd need to visualise. This would look something like this:
 
-`prod_prod_root`: 56
+`prod_prod_root: 56`
 
 Here, 56 is the subaccount ID. You're able to find this by accessing the subaccount via Canvas and inspecting the URL. It should be the number at the end:
 
