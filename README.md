@@ -27,8 +27,8 @@ The tool is written in Python using the [Eel library](https://github.com/python-
 
     Alternatively, you can choose to individually install them via `pip` calls:
 
-- Eel - `pip install eel`
-- Canvas API - `pip install canvasapi`
+    - Eel - `pip install eel`
+    - Canvas API - `pip install canvasapi`
 
 
 ### Setting up the key file
