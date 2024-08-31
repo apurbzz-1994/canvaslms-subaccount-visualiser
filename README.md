@@ -32,7 +32,7 @@ Alternatively, you can choose to individually install them via `pip` calls:
 ### Setting up the key file
 In order for the tool to interact with the Canvas API, it needs an API key/access token. You're able to generate one for your Canvas user account by following the instructions in this article - [How do I manage API access tokens as an admin?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89)
 
-Once generated, create a text file named `key` in the same directory as the repo. Afterwards, add a line to the file with a key to denote your Canvas instance (for example, prod_prod, prod_beta etc), and set the value of the key to your access token. For example:
+Once generated, create a text file named `key` in the same directory as the project files. Afterwards, add a line to the file with a key to denote your Canvas instance (for example, prod_prod, prod_beta etc), and set the value of the key to your access token. For example:
 
 `prod_prod: yoUrAcCesstokeNgoEsHere`
 
