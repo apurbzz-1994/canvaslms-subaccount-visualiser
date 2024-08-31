@@ -76,7 +76,7 @@ CURRENT_ENV = prod_prod
 ```
 
 ### Running the application
-After after all the aforementioned setup is complete, to run the application, open a terminal, `cd` to the correct directory and run the following command:
+After all the aforementioned setup is completed, to run the application, open a terminal, `cd` to the correct directory and run the following command:
 
 ```
 python3 main.py
