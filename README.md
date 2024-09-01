@@ -6,7 +6,7 @@ A Python admin tool for rendering subaccount hierarchy graphs for the [Canvas LM
 ## Introduction
 In my line of work, oftentimes, I'm having to explain the subaccount structure of our institutional Canvas LMS to vendors and various stakeholders. So I wrote this small admin tool to help me out with just that and figured it would be useful to other Canvas admins as well, especially those having to deal with complex org structures.  
 
-The tool makes use of the [Canvas API](https://canvas.instructure.com/doc/api/) to load a subaccount (along with its nested subaccounts) of your choice (provided you're an Admin in said subaccount) and employs [D3.JS](https://d3js.org/) to render a tree-graph that represents the subaccount hierarchy. You're also able to export the raw JSON data for the graph and hook it up to any visualisation platform/application of your choice.
+The tool makes use of the [Canvas API](https://canvas.instructure.com/doc/api/) to load a subaccount (along with its nested subaccounts) of your choice (provided you're an Admin in said subaccount) and employs [D3.JS](https://d3js.org/) to render tree-graphs that represent the subaccount hierarchy. You're able to inspect each nested subaccount individually or in a holistic way, and export the raw JSON data for the graphs to pass to any visualisation platform/application of your choice.
 
 The tool is written in Python using the [Eel library](https://github.com/python-eel/Eel) and can be run locally without any web servers.
 
@@ -32,15 +32,15 @@ The tool is written in Python using the [Eel library](https://github.com/python-
 
 
 ### Setting up the key file
-In order for the tool to interact with the Canvas API, it needs an access-token. You're able to generate one for your Canvas user account by following the instructions in this article - [How do I manage API access tokens as an admin?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89)
+In order for the tool to interact with the Canvas API, it needs an access-token. You're able to generate one for your Canvas user account by following the instructions elucidated in this article - [How do I manage API access tokens as an admin?](https://community.canvaslms.com/t5/Admin-Guide/How-do-I-manage-API-access-tokens-as-an-admin/ta-p/89)
 
-Once generated, create a text file named `key` in the same directory as the project files. Afterwards, add a line to the file like the one below:
+Once generated, create a file named `key` in the same directory as the project files. Afterwards, add a line to the file like the one below:
 
 ```
 prod_prod: yoUrAcCesstokeNgoEsHere
 ```
 
-Here, "prod_prod" is a key that represents your Canvas instance (you can name this key whatever you want, but needs to be consistent everywhere). Then, after the colon is where you paste your access-token.   
+Here, "prod_prod" is a key that represents your Canvas instance (you can name this key anything you want, but needs to be consistent everywhere). Then, after the colon is where you paste your access-token.   
 
 You can also add a next line afterwards to denote which subaccount you have admin access to that you'd like to visualise. This would look something like this:
 
