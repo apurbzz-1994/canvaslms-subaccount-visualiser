@@ -1,5 +1,9 @@
+/**
+ * function to render all subaccount names into a dropdown
+ * "data" is a JSON dump the function receives from the Python script
+ */
 function loadSubAccountNames(data){
-    let moduleSelectionDiv = document.getElementById('account-selection');
+    let saccountSelectionDiv = document.getElementById('account-selection');
     jsonData = JSON.parse(data);
 
     allHtml = '<p>Please select a <b>subaccount</b> that you would like to visualise:</p><select class = "form-control" name="modules" id="subaccounts">';
@@ -10,11 +14,18 @@ function loadSubAccountNames(data){
 
     allHtml += '</select>';
 
-    moduleSelectionDiv.innerHTML = allHtml;
-    //moduleDropDown = document.getElementById('modules');
-    //moduleDropDown.addEventListener('change', sendModuleNameOnModuleSelection);
+    saccountSelectionDiv.innerHTML = allHtml;
+
 }
 
+/**
+ * function to render the tree graph via D3.JS. 
+ * "data" is a JSON dump of the subaccount hierarchical structure 
+ * received from the Python script
+ * 
+ * The code for this function has been referenced from here: 
+ * https://observablehq.com/@d3/tree/2
+ */
 
 function renderTree(data){
     // Clear out any previous graphs that got generated
@@ -26,6 +37,7 @@ function renderTree(data){
     // Default width
     let width = 2500;
 
+    // Use the user-defined width, if provided
     if(py_payload.width != ""){
         width = parseInt(py_payload.width)
     }
@@ -134,6 +146,10 @@ function renderTree(data){
     exportButton.disabled = false;
 }
 
+/**
+ * function for rendering error messages for cases where an exception is 
+ * raised in the Python script
+ */
 
 eel.expose(renderErrorMessage);
 function renderErrorMessage(data){
@@ -144,7 +160,10 @@ function renderErrorMessage(data){
 
 }
 
-
+/**
+ * function tied to the onClick event for the 'Visualise' button that
+ * sends over user inputs to the Python script
+ */
 function visualiseOnButtonPress() {
     //need to make a map of data to be sent over to python
     //schedule-time and schedule-type

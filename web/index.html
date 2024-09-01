@@ -14,33 +14,35 @@
 <body>
     <div class="container-fluid">
         <div class="row mt-3">
+            <!--left panel for user inputs-->
             <div class="col-12 col-md-3 col-lg-3" style="max-height: 400px;">
                <div class = "p-3 bg-light border sticky-top">
-                <h5>Canvas Subaccount Visualiser</h5>
-                <!--Set of options for subaccount selection selection-->
-                <div style="margin-top:1em;" id="account-selection">
-                    <!--content here would get dynamically generated-->
-                    Loading..please wait...
-                </div>
-                <!--width selection-->
-                <div style="margin-top:1em;" id="schedule-selection">
-                    <p> Width: <input type="number" min="0"
-                                class="form-control form-control-sm mb-2 mr-2 w-25" style="display: inline;"
-                                id="set-width">
-                    </p>
-                </div>
-                <!--submit button-->
-                <div style="margin-top:1em;">
-                    <button type="button" id="add-task-btn" class="btn btn-primary btn-block" style="margin-top: 1em;"
-                        onclick="visualiseOnButtonPress()">Visualise</button>
-                </div>
-                <!-- Button trigger modal -->
-                <div style="margin-top:2em;">
-                    <button type="button" class="btn btn-info btn-sm" style="text-align: center;" id="export-json-btn" data-toggle="modal" data-target="#json-modal" disabled>
-                        Export JSON
-                    </button>
-                </div>
+                    <h5>Canvas Subaccount Visualiser</h5>
+                    <!--Set of options for subaccount selection selection-->
+                    <div style="margin-top:1em;" id="account-selection">
+                        <!--content here would get dynamically generated-->
+                        Loading..please wait...
+                    </div>
+                    <!--width selection-->
+                    <div style="margin-top:1em;" id="schedule-selection">
+                        <p> Width: <input type="number" min="0"
+                                    class="form-control form-control-sm mb-2 mr-2 w-25" style="display: inline;"
+                                    id="set-width">
+                        </p>
+                    </div>
+                    <!--submit button-->
+                    <div style="margin-top:1em;">
+                        <button type="button" id="add-task-btn" class="btn btn-primary btn-block" style="margin-top: 1em;"
+                            onclick="visualiseOnButtonPress()">Visualise</button>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <div style="margin-top:2em;">
+                        <button type="button" class="btn btn-info btn-sm" style="text-align: center;" id="export-json-btn" data-toggle="modal" data-target="#json-modal" disabled>
+                            Export JSON
+                        </button>
+                    </div>
                </div>
+               <!--usage information-->
                <div class = "p-3 sticky-top">
                 <p><b>Usage</b></p>
                 <p><small>1. Select your desired subaccount to set as the root node for your visualisation.</small></p>
@@ -58,6 +60,7 @@
                 <div id = "error">
                     <!--error message would get dynamically generated-->
                 </div>
+                <!--div for rendering graph-->
                 <div id="container" style = "width: 100%; height: 100%;"></div>
             </div>
         </div>
@@ -75,7 +78,7 @@
             </button>
             </div>
             <div class="modal-body">
-                <textarea id="graph-json-display" name="w3review" rows="15" cols="50">
+                <textarea id="graph-json-display" name="graph-json-display" rows="15" cols="50">
                     <!--content to be dynamically generated-->
                 </textarea>
             </div>
@@ -97,7 +100,7 @@
 <!--D3 CDN-->
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
-<!--The eel.js script tag is important for it to work with main.py-->
+<!--The eel.js script tag to work with main.py-->
 <script type="text/javascript" src="/eel.js"></script>
 
 <!--main script-->

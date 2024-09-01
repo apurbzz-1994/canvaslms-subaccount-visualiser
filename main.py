@@ -4,12 +4,16 @@ import eel
 eel.init("web")
 
 
+#set this to the relevant key corresponding to your Canvas instance
 CURRENT_ENV = 'prod_prod'
+
+#urls for your Canvas instance
 ROOT_URL_MAP = {
     'prod_beta': '',
     'prod_prod': ''
 }
 
+#this is the root account id to be used if nothing is specified in the key file
 ROOT_ACCOUNT = 1
 
 
@@ -19,7 +23,7 @@ def render_error_message(e, add_message):
     to_render = json.dumps(error_message)
     eel.renderErrorMessage(to_render)
 
-
+#connecting to the Canvas API
 def login():
     try:
         KEY_FILE = './key'
@@ -87,7 +91,7 @@ def initiate_tree_generation(sub_json):
         if each.id == int(subaccount_id):
             selected_subacc_obj = each
     
-    #after finding, execute function
+    #after finding, execute function to generate hierarchy json
     hierarchy_json = generate_hieraechy_from_canvas(selected_subacc_obj)
 
     payload = {
