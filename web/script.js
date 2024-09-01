@@ -156,7 +156,7 @@ function renderErrorMessage(data){
     errorMessage = JSON.parse(data).error;
     errorDiv = document.getElementById('error');
 
-    errorDiv.innerHTML = `<code>${errorMessage}</code>`;
+    errorDiv.innerHTML += `<p><code>${errorMessage}</code></p>`;
 
 }
 
