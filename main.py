@@ -66,7 +66,7 @@ def send_subaccount_names_on_first_load():
         subaccount_payload = json.dumps(subaccount_names)
         return subaccount_payload
     except Exception as e:
-        render_error_message(e, "Please make sure the account ID you've provided in the key file is correct")
+        render_error_message(e, "Please make sure the account ID you've provided in the key file is correct and you have admin access")
 
 
 
