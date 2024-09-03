@@ -6,7 +6,7 @@ A Python admin tool for rendering subaccount hierarchy graphs for the [Canvas LM
 ## Introduction
 In my line of work, oftentimes, I'm having to explain the subaccount structure of our institutional Canvas LMS to vendors and various stakeholders. So I wrote this small admin tool to help me out with just that and figured it would be useful to other Canvas admins as well, especially those having to deal with complex org structures.  
 
-The tool makes use of the [Canvas API](https://canvas.instructure.com/doc/api/) to load a subaccount (along with its nested subaccounts) of your choice (provided you're an Admin in said subaccount) and employs [D3.JS](https://d3js.org/) to render tree-graphs that represent the subaccount hierarchy. You're able to inspect each nested subaccount individually or in a holistic way, and export the raw JSON data for the graphs to pass to any visualisation platform/application of your choice.
+The tool makes use of the [Canvas API](https://canvas.instructure.com/doc/api/) to load a subaccount (along with its nested subaccounts) of your choice (provided you're an Admin in said subaccount) and employs [D3.JS](https://d3js.org/) to render tree-graphs that represent the subaccount hierarchy. You're able to inspect each nested subaccount individually or the whole subaccount structure in a holistic way, and export the raw JSON data for the graphs to pass to any visualisation platform/application of your choice.
 
 The tool is written in Python using the [Eel library](https://github.com/python-eel/Eel) and can be run locally without any web servers.
 
