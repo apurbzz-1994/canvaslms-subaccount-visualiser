@@ -86,6 +86,22 @@ Depending on your system, you may need to use `python` or `python3` in the above
 
 This will launch the dashboard. 
 
+## Printing and PDF
+While this project does not include a third-party PDF library to export PDF copies of the generated graphs, a print template has been provided within the `print_template` folder so that the browser's print function can be utilised to create a PDF.
+
+### Steps
+1. Use the tool to copy the JSON data (by clicking the `Export JSON` button) for the graph that you wish to export as PDF:
+
+    ![copy JSON from tool](/git_assets/print_step_1.png)
+
+2. In the `print_template` folder, open `data.js` and then paste the JSON after `const data =`. 
+
+3. Open the `print_template.html` file in your browser. This should give you a static version of the graph: 
+
+    ![static graph in html](/git_assets/print_step_3.png)
+
+4. Use the browser's print function (usually `File > Print`) to `Save as PDF`. 
+
 ## Dependencies
 
 Python dependencies:
