@@ -92,7 +92,7 @@ While this project does not make use of a third-party PDF library to export PDF 
 ### Steps
 1. Use the tool to copy the JSON data (by clicking the `Export JSON` button) for the graph that you wish to export as PDF:
 
-    ![copy JSON from tool](/git_assets/print_step_1.png)
+    ![copy JSON from tool](/git_assets/print_step_1.png = 250x250)
 
 2. In the `print_template` folder, open `data.js` and then paste the JSON after `const data =`:
 
