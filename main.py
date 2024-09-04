@@ -11,7 +11,7 @@ CURRENT_ENV = 'prod_prod'
 #urls for your Canvas instance
 ROOT_URL_MAP = {
     'prod_beta': '',
-    'prod_prod': ''
+    'prod_prod': 'https://canvas.lms.unimelb.edu.au/'
 }
 
 #this is the root account id to be used if nothing is specified in the key file
@@ -74,7 +74,7 @@ def send_subaccount_names_on_first_load():
 def build_hierarchy(graph, node, ref):
     # Initialize a hierarchy structure for the current node
     hierarchy = {"name": ref[node]['name'], "children": []}
-    
+   
     # Recursively build the hierarchy for each child of the current node
     for child in graph.get(node, []):
         hierarchy["children"].append(build_hierarchy(graph, child, ref))

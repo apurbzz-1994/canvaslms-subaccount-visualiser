@@ -1,1 +1,1 @@
-const data = {'name': 'default', 'children':[]}
+const data = {'name': 'default', 'children': []}
