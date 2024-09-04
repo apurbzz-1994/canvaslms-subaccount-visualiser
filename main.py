@@ -1,6 +1,7 @@
 from canvasapi import Canvas
 import json
 import eel
+import random
 eel.init("web")
 
 
@@ -73,7 +74,7 @@ def send_subaccount_names_on_first_load():
 def build_hierarchy(graph, node, ref):
     # Initialize a hierarchy structure for the current node
     hierarchy = {"name": ref[node]['name'], "children": []}
-   
+    
     # Recursively build the hierarchy for each child of the current node
     for child in graph.get(node, []):
         hierarchy["children"].append(build_hierarchy(graph, child, ref))
