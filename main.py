@@ -11,7 +11,7 @@ CURRENT_ENV = 'prod_prod'
 #urls for your Canvas instance
 ROOT_URL_MAP = {
     'prod_beta': '',
-    'prod_prod': 'https://canvas.lms.unimelb.edu.au/'
+    'prod_prod': ''
 }
 
 #this is the root account id to be used if nothing is specified in the key file
